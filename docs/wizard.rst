@@ -300,6 +300,8 @@ Here's what the view code might look like::
 
 
     class OrderWizard(SessionWizardView):
+        form_list = FORMS
+        
         def get_template_names(self):
             return [TEMPLATES[self.steps.current]]
 
